@@ -1,0 +1,14 @@
+.clock-container {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.time-container {
+    padding-bottom: 5px;
+    font-size: 12vw;
+}
+
+.date-container {
+    padding-top: 5px;
+    font-size: 4vw;
+}
