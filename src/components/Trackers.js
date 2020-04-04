@@ -1,6 +1,7 @@
 import React from 'react';
 import Tracker from './Tracker';
-import {data} from '../data'; 
+import {fish} from '../data/fish'; 
+import {bugs} from '../data/bugs';
 
 const withinBound = (bound, currentNum) => {
   const {start, end} = bound;
@@ -24,11 +25,14 @@ const filterData = (item, month, time) => {
 }
 
 const Trackers = ({date}) => {
-  console.log(data.fish.filter(fish => filterData(fish, 3, 3)));
+  const cMonth = date.getMonth();
+  const cHour = date.getHours();
+  const cFish = fish.filter(fish => filterData(fish, cMonth, cHour));
+  const cBugs = bugs.filter(bug => filterData(bug, cMonth, cHour));
   return (
     <div>
-      <Tracker title="Fish"/>
-      <Tracker title="Bugs"/>
+      <Tracker title="Fish" items={cFish}/>
+      <Tracker title="Bugs" items={cBugs}/>
     </div> 
   );
 };
