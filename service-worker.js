@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ac-fish-and-bug/precache-manifest.dabd2360fc4824061029797e0ace0de8.js"
+  "/ac-fish-and-bug/precache-manifest.39eb6978df1ea916aa067e03da2cd70b.js"
 );
 
 self.addEventListener('message', (event) => {
