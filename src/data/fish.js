@@ -89,11 +89,23 @@ const location = {
   PIER: 'Pier'
 }
 
+const size = {
+  SMALLEST: 'Smallest',
+  NARROW: 'Narrow',
+  SMALL: 'Small',
+  MEDIUM: 'Medium',
+  LARGE: 'Large',
+  XLARGE: 'X-Large',
+  LARGEST: 'Largest',
+  LARGEST_FIN: 'Largest (Fin)',
+}
+
 
 export const fish = [
   {
     name: 'Bitterling',
     icon: Bitterling,
+    size: size.SMALLEST,
     price: 900,
     location: location.RIVER,
     availability: {
@@ -110,6 +122,7 @@ export const fish = [
   {
     name: 'Pale Chub',
     icon: PaleChub,
+    size: size.SMALLEST,
     price: 160,
     location: location.RIVER,
     availability: {
@@ -126,6 +139,7 @@ export const fish = [
   {
     name: 'Crucian Carp',
     icon: CrucianCarp,
+    size: size.SMALL,
     price: 160,
     location: location.RIVER,
     availability: {
@@ -142,6 +156,7 @@ export const fish = [
   {
     name: 'Dace',
     icon: Dace,
+    size: size.MEDIUM,
     price: 240,
     location: location.RIVER,
     availability: {
@@ -158,6 +173,7 @@ export const fish = [
   {
     name: 'Carp',
     icon: Carp,
+    size: size.LARGE,
     price: 300,
     location: location.POND,
     availability: {
@@ -174,6 +190,7 @@ export const fish = [
   {
     name: 'Koi',
     icon: Koi,
+    size: size.LARGE,
     price: 4000,
     location: location.POND,
     availability: {
@@ -190,6 +207,7 @@ export const fish = [
   {
     name: 'Goldfish',
     icon: Goldfish,
+    size: size.SMALLEST,
     price: 1300,
     location: location.POND,
     availability: {
@@ -206,6 +224,7 @@ export const fish = [
   {
     name: 'Pop-eyed Goldfish',
     icon: PopeyedGoldfish,
+    size: size.SMALLEST,
     price: 1300,
     location: location.POND,
     availability: {
@@ -222,6 +241,7 @@ export const fish = [
   {
     name: 'Ranchu Goldfish',
     icon: RanchuGoldfish,
+    size: size.SMALL,
     price: 4500,
     location: location.POND,
     availability: {
@@ -238,6 +258,7 @@ export const fish = [
   {
     name: 'Killifish',
     icon: Killifish,
+    size: size.SMALLEST,
     price: 300,
     location: location.POND,
     availability: {
@@ -254,6 +275,7 @@ export const fish = [
   {
     name: 'Crawfish',
     icon: Crawfish,
+    size: size.SMALL,
     price: 200,
     location: location.POND,
     availability: {
@@ -270,6 +292,7 @@ export const fish = [
   {
     name: 'Soft-shelled Turtle',
     icon: SoftShelledTurtle,
+    size: size.LARGE,
     price: 3750,
     location: location.RIVER,
     availability: {
@@ -286,6 +309,7 @@ export const fish = [
   {
     name: 'Snapping Turtle',
     icon: SnappingTurtle,
+    size: size.XLARGE,
     price: 5000,
     location: location.RIVER,
     availability: {
@@ -302,6 +326,7 @@ export const fish = [
   {
     name: 'Tadpole',
     icon: Tadpole,
+    size: size.SMALLEST,
     price: 100,
     location: location.POND,
     availability: {
@@ -318,6 +343,7 @@ export const fish = [
   {
     name: 'Frog',
     icon: Frog,
+    size: size.SMALL,
     price: 120,
     location: location.POND,
     availability: {
@@ -334,6 +360,7 @@ export const fish = [
   {
     name: 'Freshwater Goby',
     icon: FreshwaterGoby,
+    size: size.SMALL,
     price: 400,
     location: location.RIVER,
     availability: {
@@ -349,6 +376,7 @@ export const fish = [
   },
   {
     name: 'Loach',
+    size: size.SMALL,
     icon: Loach,
     price: 400,
     location: location.RIVER,
@@ -365,6 +393,7 @@ export const fish = [
   },
   {
     name: 'Catfish',
+    size: size.LARGE,
     icon: Catfish,
     price: 800,
     location: location.POND,
@@ -382,6 +411,7 @@ export const fish = [
   {
     name: 'Giant Snakehead',
     icon: GiantSnakehead,
+    size: size.XLARGE,
     price: 5500,
     location: location.POND,
     availability: {
@@ -398,6 +428,7 @@ export const fish = [
   {
     name: 'Bluegill',
     icon: Bluegill,
+    size: size.SMALL,
     price: 180,
     location: location.RIVER,
     availability: {
@@ -414,6 +445,7 @@ export const fish = [
   {
     name: 'Yellow Perch',
     icon: YellowPerch,
+    size: size.MEDIUM,
     price: 300,
     location: location.RIVER,
     availability: {
@@ -430,6 +462,7 @@ export const fish = [
   {
     name: 'Black Bass',
     icon: BlackBass,
+    size: size.LARGE,
     price: 400,
     location: location.RIVER,
     availability: {
@@ -446,6 +479,7 @@ export const fish = [
   {
     name: 'Tilapia',
     icon: Tilapia,
+    size: size.MEDIUM,
     price: 800,
     location: location.RIVER,
     availability: {
@@ -462,6 +496,7 @@ export const fish = [
   {
     name: 'Pike',
     icon: Pike,
+    size: size.XLARGE,
     price: 1800,
     location: location.RIVER,
     availability: {
@@ -478,6 +513,7 @@ export const fish = [
   {
     name: 'Pond Smelt',
     icon: PondSmelt,
+    size: size.SMALL,
     price: 500,
     location: location.POND,
     availability: {
@@ -494,6 +530,7 @@ export const fish = [
   {
     name: 'Sweetfish',
     icon: Sweetfish,
+    size: size.MEDIUM,
     price: 900,
     location: location.RIVER,
     availability: {
@@ -510,6 +547,7 @@ export const fish = [
   {
     name: 'Cherry Salmon',
     icon: CherrySalmon,
+    size: size.MEDIUM,
     price: 1000,
     location: location.RIVER_CLIFFTOP,
     availability: {
@@ -532,6 +570,7 @@ export const fish = [
   {
     name: 'Char',
     icon: Char,
+    size: size.MEDIUM,
     price: 3800,
     location: location.RIVER_CLIFFTOP,
     availability: {
@@ -554,6 +593,7 @@ export const fish = [
   {
     name: 'Golden Trout',
     icon: GoldenTrout,
+    size: size.MEDIUM,
     price: 15000,
     location: location.RIVER_CLIFFTOP,
     availability: {
@@ -576,6 +616,7 @@ export const fish = [
   {
     name: 'Stringfish',
     icon: Stringfish,
+    size: size.LARGEST,
     price: 15000,
     location: location.RIVER_CLIFFTOP,
     availability: {
@@ -592,6 +633,7 @@ export const fish = [
   {
     name: 'Salmon',
     icon: Salmon,
+    size: size.LARGE,
     price: 700,
     location: location.RIVER_MOUTH,
     availability: {
@@ -608,6 +650,7 @@ export const fish = [
   {
     name: 'King Salmon',
     icon: KingSalmon,
+    size: size.LARGEST,
     price: 1800,
     location: location.RIVER_MOUTH,
     availability: {
@@ -624,6 +667,7 @@ export const fish = [
   {
     name: 'Mitten Crab',
     icon: MittenCrab,
+    size: size.SMALL,
     price: 2000,
     location: location.RIVER,
     availability: {
@@ -640,6 +684,7 @@ export const fish = [
   {
     name: 'Guppy',
     icon: Guppy,
+    size: size.SMALLEST,
     price: 1300,
     location: location.RIVER,
     availability: {
@@ -656,6 +701,7 @@ export const fish = [
   {
     name: 'Nibble Fish',
     icon: NibbleFish,
+    size: size.SMALL,
     price: 1500,
     location: location.RIVER,
     availability: {
@@ -672,6 +718,7 @@ export const fish = [
   {
     name: 'Angelfish',
     icon: Angelfish,
+    size: size.SMALL,
     price: 3000,
     location: location.RIVER,
     availability: {
@@ -688,6 +735,7 @@ export const fish = [
   {
     name: 'Betta',
     icon: Betta,
+    size: size.SMALL,
     price: 2500,
     location: location.RIVER,
     availability: {
@@ -704,6 +752,7 @@ export const fish = [
   {
     name: 'Neon Tetra',
     icon: NeonTetra,
+    size: size.SMALLEST,
     price: 500,
     location: location.RIVER,
     availability: {
@@ -720,6 +769,7 @@ export const fish = [
   {
     name: 'Rainbowfish',
     icon: Rainbowfish,
+    size: size.SMALL,
     price: 800,
     location: location.RIVER,
     availability: {
@@ -736,6 +786,7 @@ export const fish = [
   {
     name: 'Piranha',
     icon: Piranha,
+    size: size.SMALL,
     price: 2500,
     location: location.RIVER,
     availability: {
@@ -758,6 +809,7 @@ export const fish = [
   {
     name: 'Arowana',
     icon: Arowana,
+    size: size.LARGE,
     price: 10000,
     location: location.RIVER,
     availability: {
@@ -774,6 +826,7 @@ export const fish = [
   {
     name: 'Dorado',
     icon: Dorado,
+    size: size.XLARGE,
     price: 15000,
     location: location.RIVER,
     availability: {
@@ -790,6 +843,7 @@ export const fish = [
   {
     name: 'Gar',
     icon: Gar,
+    size: size.LARGEST,
     price: 6000,
     location: location.POND,
     availability: {
@@ -806,6 +860,7 @@ export const fish = [
   {
     name: 'Arapaima',
     icon: Arapaima,
+    size: size.LARGEST,
     price: 10000,
     location: location.RIVER,
     availability: {
@@ -822,6 +877,7 @@ export const fish = [
   {
     name: 'Saddled Bichir',
     icon: SaddledBichir,
+    size: size.LARGE,
     price: 4000,
     location: location.RIVER,
     availability: {
@@ -838,6 +894,7 @@ export const fish = [
   {
     name: 'Sturgeon',
     icon: Sturgeon,
+    size: size.LARGEST,
     price: 10000,
     location: location.RIVER_MOUTH,
     availability: {
@@ -854,6 +911,7 @@ export const fish = [
   {
     name: 'Sea Butterfly',
     icon: SeaButterfly,
+    size: size.SMALLEST,
     price: 1000,
     location: location.SEA,
     availability: {
@@ -870,6 +928,7 @@ export const fish = [
   {
     name: 'Seahorse',
     icon: Seahorse,
+    size: size.SMALLEST,
     price: 1100,
     location: location.SEA,
     availability: {
@@ -886,6 +945,7 @@ export const fish = [
   {
     name: 'Clownfish',
     icon: Clownfish,
+    size: size.SMALLEST,
     price: 650,
     location: location.SEA,
     availability: {
@@ -902,6 +962,7 @@ export const fish = [
   {
     name: 'Surgeonfish',
     icon: Surgeonfish,
+    size: size.SMALL,
     price: 1000,
     location: location.SEA,
     availability: {
@@ -918,6 +979,7 @@ export const fish = [
   {
     name: 'Butterfly Fish',
     icon: ButterflyFish,
+    size: size.SMALL,
     price: 1000,
     location: location.SEA,
     availability: {
@@ -934,6 +996,7 @@ export const fish = [
   {
     name: 'Napoleaonfish',
     icon: Napoleonfish,
+    size: size.LARGEST,
     price: 10000,
     location: location.SEA,
     availability: {
@@ -950,6 +1013,7 @@ export const fish = [
   {
     name: 'Zebra Turkeyfish',
     icon: ZebraTurkeyfish,
+    size: size.MEDIUM,
     price: 500,
     location: location.SEA,
     availability: {
@@ -966,6 +1030,7 @@ export const fish = [
   {
     name: 'Blowfish',
     icon: Blowfish,
+    size: size.MEDIUM,
     price: 5000,
     location: location.SEA,
     availability: {
@@ -982,6 +1047,7 @@ export const fish = [
   {
     name: 'Puffer Fish',
     icon: PufferFish,
+    size: size.MEDIUM,
     price: 250,
     location: location.SEA,
     availability: {
@@ -998,6 +1064,7 @@ export const fish = [
   {
     name: 'Anchovy',
     icon: Anchovy,
+    size: size.SMALL,
     price: 200,
     location: location.SEA,
     availability: {
@@ -1014,6 +1081,7 @@ export const fish = [
   {
     name: 'Horse Mackerel',
     icon: HorseMackerel,
+    size: size.SMALL,
     price: 150,
     location: location.SEA,
     availability: {
@@ -1030,6 +1098,7 @@ export const fish = [
   {
     name: 'Barred Knifejaw',
     icon: BarredKnifejaw,
+    size: size.MEDIUM,
     price: 5000,
     location: location.SEA,
     availability: {
@@ -1046,6 +1115,7 @@ export const fish = [
   {
     name: 'Sea Bass',
     icon: SeaBass,
+    size: size.XLARGE,
     price: 400,
     location: location.SEA,
     availability: {
@@ -1062,6 +1132,7 @@ export const fish = [
   {
     name: 'Red Snapper',
     icon: RedSnapper,
+    size: size.LARGE,
     price: 3000,
     location: location.SEA,
     availability: {
@@ -1078,6 +1149,7 @@ export const fish = [
   {
     name: 'Dab',
     icon: Dab,
+    size: size.MEDIUM,
     price: 300,
     location: location.SEA,
     availability: {
@@ -1094,6 +1166,7 @@ export const fish = [
   {
     name: 'Olive Flounder',
     icon: OliveFlounder,
+    size: size.LARGE,
     price: 800,
     location: location.SEA,
     availability: {
@@ -1110,6 +1183,7 @@ export const fish = [
   {
     name: 'Squid',
     icon: Squid,
+    size: size.MEDIUM,
     price: 500,
     location: location.SEA,
     availability: {
@@ -1126,6 +1200,7 @@ export const fish = [
   {
     name: 'Moray Eel',
     icon: MorayEel,
+    size: size.NARROW,
     price: 2000,
     location: location.SEA,
     availability: {
@@ -1142,6 +1217,7 @@ export const fish = [
   {
     name: 'Ribbon Eel',
     icon: RibbonEel,
+    size: size.NARROW,
     price: 600,
     location: location.SEA,
     availability: {
@@ -1158,6 +1234,7 @@ export const fish = [
   {
     name: 'Tuna',
     icon: Tuna,
+    size: size.LARGEST,
     price: 7000,
     location: location.PIER,
     availability: {
@@ -1174,6 +1251,7 @@ export const fish = [
   {
     name: 'Blue Marlin',
     icon: BlueMarlin,
+    size: size.LARGEST,
     price: 10000,
     location: location.PIER,
     availability: {
@@ -1196,6 +1274,7 @@ export const fish = [
   {
     name: 'Giant Trevally',
     icon: GiantTrevally,
+    size: size.LARGE,
     price: 4500,
     location: location.PIER,
     availability: {
@@ -1212,6 +1291,7 @@ export const fish = [
   {
     name: 'Mahi-mahi',
     icon: MahiMahi,
+    size: size.LARGE,
     price: 6000,
     location: location.PIER,
     availability: {
@@ -1228,6 +1308,7 @@ export const fish = [
   {
     name: 'Ocean Sunfish',
     icon: OceanSunfish,
+    size: size.LARGEST_FIN,
     price: 4000,
     location: location.SEA,
     availability: {
@@ -1244,6 +1325,7 @@ export const fish = [
   {
     name: 'Ray',
     icon: Ray,
+    size: size.XLARGE,
     price: 3000,
     location: location.SEA,
     availability: {
@@ -1260,6 +1342,7 @@ export const fish = [
   {
     name: 'Saw Shark',
     icon: SawShark,
+    size: size.LARGEST_FIN,
     price: 12000,
     location: location.SEA,
     availability: {
@@ -1276,6 +1359,7 @@ export const fish = [
   {
     name: 'Hammerhead Shark',
     icon: HammerheadShark,
+    size: size.LARGEST_FIN,
     price: 8000,
     location: location.SEA,
     availability: {
@@ -1292,6 +1376,7 @@ export const fish = [
   {
     name: 'Great White Shark',
     icon: GreatWhiteShark,
+    size: size.LARGEST_FIN,
     price: 15000,
     location: location.SEA,
     availability: {
@@ -1308,6 +1393,7 @@ export const fish = [
   {
     name: 'Whale Shark',
     icon: WhaleShark,
+    size: size.LARGEST_FIN,
     price: 13000,
     location: location.SEA,
     availability: {
@@ -1324,6 +1410,7 @@ export const fish = [
   {
     name: 'Suckerfish',
     icon: Suckerfish,
+    size: size.LARGEST_FIN,
     price: 1500,
     location: location.SEA,
     availability: {
@@ -1340,6 +1427,7 @@ export const fish = [
   {
     name: 'Football Fish',
     icon: FootballFish,
+    size: size.LARGE,
     price: 2500,
     location: location.SEA,
     availability: {
@@ -1356,6 +1444,7 @@ export const fish = [
   {
     name: 'Oarfish',
     icon: Oarfish,
+    size: size.LARGEST,
     price: 9000,
     location: location.SEA,
     availability: {
@@ -1372,6 +1461,7 @@ export const fish = [
   {
     name: 'Barreleye',
     icon: Barreleye,
+    size: size.SMALL,
     price: 15000,
     location: location.SEA,
     availability: {
@@ -1388,6 +1478,7 @@ export const fish = [
   {
     name: 'Coelacanth',
     icon: Coelacanth,
+    size: size.LARGEST,
     price: 15000,
     location: location.SEA_RAIN,
     availability: {

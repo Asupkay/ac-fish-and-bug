@@ -21,6 +21,7 @@ const ItemInfo = ({item, handleCheck, checked}) => {
       <div className="info-container">
         <div><span className="bold">Location:</span> {item.location}</div>
         <div><span className="bold">Price:</span> {item.price} Bells</div>
+        {item.size && <div><span className="bold">Shadow size:</span> {item.size}</div>}
         <ItemTime times={item.availability.times}/>
         <ItemMonth months={item.availability.months}/>
       </div>
