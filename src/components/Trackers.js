@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Cookies from 'universal-cookie';
 import './Trackers.css';
 import Tracker from './Tracker';
 import Dropdown from './Dropdown';
@@ -29,6 +30,7 @@ const filterData = (item, month, time) => {
 const sortOptions = {
   ALPHABETICAL: 'Alphabetical',
   MOST_VALUABLE: 'Most Valuable',
+  NOT_DONATED: 'Not Donated',
 }
 
 const sortItems = (option, items) => {
@@ -43,6 +45,14 @@ const sortItems = (option, items) => {
     case(sortOptions.MOST_VALUABLE):
       items.sort((a, b) => {
         return b.price - a.price; 
+      });
+      break;
+    case(sortOptions.NOT_DONATED):
+      const cookies = new Cookies();      
+      items.sort((a, b) => {
+        const aVal = (cookies.get(a.name) === 'true') ? 1 : 0;
+        const bVal =(cookies.get(b.name) === 'true') ? 1 : 0;
+        return aVal - bVal;
       });
       break;
     default:
