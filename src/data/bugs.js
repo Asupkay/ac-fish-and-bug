@@ -509,7 +509,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 0,
@@ -611,7 +611,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 6,
@@ -675,7 +675,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 10,
@@ -707,7 +707,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 10,
@@ -771,7 +771,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 2,
@@ -819,7 +819,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 1,
@@ -835,7 +835,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 3,
@@ -851,7 +851,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 0,
@@ -867,7 +867,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 4,
@@ -883,7 +883,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 6,
@@ -899,7 +899,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [
         {
@@ -921,7 +921,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 11,
@@ -937,7 +937,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 6,
@@ -969,7 +969,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 5,
@@ -1001,7 +1001,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 6,
@@ -1017,7 +1017,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 6,
@@ -1199,7 +1199,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 6,
@@ -1215,7 +1215,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 0,
@@ -1231,7 +1231,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 0,
@@ -1263,7 +1263,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 0,
@@ -1279,7 +1279,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 0,
@@ -1311,7 +1311,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 3,
@@ -1327,7 +1327,7 @@ export const bugs = [
     availability: {
       times: [{
         start: 0,
-        end: 23
+        end: 24
       }],
       months: [{
         start: 0,
