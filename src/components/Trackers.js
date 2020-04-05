@@ -33,6 +33,11 @@ const sortOptions = {
   NOT_DONATED: 'Not Donated',
 }
 
+const hemisphereOptions = {
+  NORTHERN_HEMISPHERE: 'North',
+  SOUTHERN_HEMISPHERE: 'South'
+}
+
 const sortItems = (option, items) => {
   switch(option) {
     case(sortOptions.ALPHABETICAL):
@@ -60,25 +65,42 @@ const sortItems = (option, items) => {
   }
 }
 
+
+
 const Trackers = ({date}) => {
+  const cookies = new Cookies();
   const [sortBy, setSortBy] = useState(sortOptions.ALPHABETICAL)
+  const [hemisphere, setHemisphere] = useState(cookies.get('hemisphere') || hemisphereOptions.NORTHERN_HEMISPHERE);
 
   const handleChange = (e) => {
     setSortBy(e.target.value);
   }
 
+  const handleHemisphereChange = (e) => {
+    setHemisphere(e.target.value);
+    cookies.set('hemisphere', e.target.value);
+  }
+
   const cMonth = date.getMonth();
+  const offset = (hemisphere === hemisphereOptions.SOUTHERN_HEMISPHERE) ? 6 : 0;
   const cHour = date.getHours();
-  const cFish = fish.filter(fish => filterData(fish, cMonth, cHour));
-  const cBugs = bugs.filter(bug => filterData(bug, cMonth, cHour));
+  const cFish = fish.filter(fish => filterData(fish, cMonth + offset, cHour));
+  const cBugs = bugs.filter(bug => filterData(bug, cMonth + offset, cHour));
   sortItems(sortBy, cFish);
   sortItems(sortBy, cBugs);
   return (
     <div className="trackers-container">
       <Dropdown 
+        title="Sort by:"
         options={sortOptions} 
         handleChange={handleChange}
         selected={sortBy}
+      />
+      <Dropdown
+        title="Hemisphere:"
+        handleChange={handleHemisphereChange}
+        options={hemisphereOptions}
+        selected={hemisphere}
       />
       <Tracker title="Fish" items={cFish}/>
       <Tracker title="Bugs" items={cBugs}/>

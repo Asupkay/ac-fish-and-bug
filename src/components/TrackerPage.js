@@ -1,6 +1,7 @@
 import React from 'react';
 import Clock from './Clock';
 import Trackers from './Trackers';
+import Dropdown from './Dropdown';
 import './TrackerPage.css';
 
 const getBackgroundColor = (time) => {
@@ -13,6 +14,8 @@ const getBackgroundColor = (time) => {
   }
   return 'night-background';
 };
+
+
 
 class TrackerPage extends React.Component {
   constructor(props) {
@@ -29,6 +32,8 @@ class TrackerPage extends React.Component {
     );
   }
 
+
+
   render() {
     const {date} = this.state;
     const backgroundColor = getBackgroundColor(date.getHours());
@@ -36,7 +41,9 @@ class TrackerPage extends React.Component {
     return (
       <div className={`tracker-page-container ${backgroundColor}`}>
         <Clock date={date}/>
-        <Trackers date={date}/>
+        <Trackers 
+          date={date}
+        />
       </div>
     );
   }
