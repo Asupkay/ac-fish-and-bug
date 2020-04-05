@@ -2,8 +2,8 @@ import React from 'react';
 import './Tracker.css';
 
 const renderItems = (items) => {
-  return items.map((item) => 
-    <p key={item.name}>{item.name}</p>
+  return items.map((item, index) => 
+    <img key={index} src={item.icon} alt={item.name}/>
   );
 };
 

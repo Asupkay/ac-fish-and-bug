@@ -1,10 +1,9 @@
 import AgriasButterfly from '../images/bugs/AgriasButterfly.png';
 import Ant from '../images/bugs/Ant.png';
-import Atlas from '../images/bugs/Atlas.png';
+import AtlasMoth from '../images/bugs/AtlasMoth.png';
 import Bagworm from '../images/bugs/Bagworm.png';
 import BandedDragonfly from '../images/bugs/BandedDragonfly.png';
 import BellCricket from '../images/bugs/BellCricket.png';
-import Birdwing from '../images/bugs/Birdwing.png';
 import BlueWeevilBeetle from '../images/bugs/BlueWeevilBeetle.png';
 import BrownCicada from '../images/bugs/BrownCicada.png';
 import Centipede from '../images/bugs/Centipede.png';
@@ -13,7 +12,7 @@ import CitrusLongHornedBeetle from '../images/bugs/CitrusLongHornedBeetle.png';
 import CommonBluebottle from '../images/bugs/CommonBluebottle.png';
 import CommonButterfly from '../images/bugs/CommonButterfly.png';
 import Cricket from '../images/bugs/Cricket.png';
-import Cyclommatus from '../images/bugs/Cyclommatus.png';
+import CyclommatusStag from '../images/bugs/CyclommatusStag.png';
 import Damselfly from '../images/bugs/Damselfly.png';
 import DarnerDragonfly from '../images/bugs/DarnerDragonfly.png';
 import DivingBeetle from '../images/bugs/DivingBeetle.png';
@@ -56,8 +55,9 @@ import PaperKiteButterfly from '../images/bugs/PaperKiteButterfly.png';
 import PeacockButterfly from '../images/bugs/PeacockButterfly.png';
 import PillBug from '../images/bugs/PillBug.png';
 import Pondskater from '../images/bugs/Pondskater.png';
+import QueenAlexandrasBirdwing from '../images/bugs/QueenAlexandrasBirdwing.png';
 import RainbowStag from '../images/bugs/RainbowStag.png';
-import RajaBrooke from '../images/bugs/RajaBrooke.png';
+import RajahBrookesBirdwing from '../images/bugs/RajahBrookesBirdwing.png';
 import RedDragonfly from '../images/bugs/RedDragonfly.png';
 import RiceGrasshopper from '../images/bugs/RiceGrasshopper.png';
 import RobustCicada from '../images/bugs/RobustCicada.png';
@@ -67,7 +67,7 @@ import ScarabBeetle from '../images/bugs/ScarabBeetle.png';
 import Scorpion from '../images/bugs/Scorpion.png';
 import Snail from '../images/bugs/Snail.png';
 import Spider from '../images/bugs/Spider.png';
-import StinkBug from '../images/bugs/StinkBug.png';
+import Stinkbug from '../images/bugs/Stinkbug.png';
 import Tarantula from '../images/bugs/Tarantula.png';
 import TigerBeetle from '../images/bugs/TigerBeetle.png';
 import TigerButterfly from '../images/bugs/TigerButterfly.png';
@@ -107,6 +107,7 @@ const location = {
 export const bugs = [
   {
     name: 'Common Butterfly',
+    icon: CommonButterfly,
     price: 160,
     location: location.ABOVE_FLOWERS,
     availability: {
@@ -122,6 +123,7 @@ export const bugs = [
   },
   {
     name: 'Yellow Butterfly',
+    icon: YellowButterfly,
     price: 160,
     location: location.FLYING,
     availability: {
@@ -137,6 +139,7 @@ export const bugs = [
   },
   {
     name: 'Tiger Butterfly',
+    icon: TigerButterfly,
     price: 240,
     location: location.FLYING,
     availability: {
@@ -152,6 +155,7 @@ export const bugs = [
   },
   {
     name: 'Peacock Butterfly',
+    icon: PeacockButterfly,
     price: 2500,
     location: location.PBB_FLOWERS,
     availability: {
@@ -167,6 +171,7 @@ export const bugs = [
   },
   {
     name: 'Common Bluebottle',
+    icon: CommonBluebottle,
     price: 300,
     location: location.FLYING,
     availability: {
@@ -182,6 +187,7 @@ export const bugs = [
   },
   {
     name: 'Paper Kite Butterfly',
+    icon: PaperKiteButterfly,
     price: 1000,
     location: location.FLYING,
     availability: {
@@ -197,6 +203,7 @@ export const bugs = [
   },
   {
     name: 'Great Purple Emperor',
+    icon: GreatPurpleEmperor,
     price: 3000,
     location: location.FLYING,
     availability: {
@@ -212,6 +219,7 @@ export const bugs = [
   },
   {
     name: 'Monarch Butterfly',
+    icon: MonarchButterfly,
     price: 140,
     location: location.FLYING,
     availability: {
@@ -227,6 +235,7 @@ export const bugs = [
   },
   {
     name: 'Emperor Butterfly',
+    icon: EmperorButterfly,
     price: 4000,
     location: location.FLYING,
     availability: {
@@ -248,6 +257,7 @@ export const bugs = [
   },
   {
     name: 'Agrias Butterfly',
+    icon: AgriasButterfly,
     price: 3000,
     location: location.FLYING,
     availability: {
@@ -263,6 +273,7 @@ export const bugs = [
   },
   {
     name: 'Rajah Brooke\'s Birdwing',
+    icon: RajahBrookesBirdwing,
     price: 2500,
     location: location.ABOVE_FLOWERS,
     availability: {
@@ -284,6 +295,7 @@ export const bugs = [
   },
   {
     name: 'Queen Alexandra\'s Birdwing',
+    icon: QueenAlexandrasBirdwing,
     price: 4000,
     location: location.FLYING,
     availability: {
@@ -299,6 +311,7 @@ export const bugs = [
   },
   {
     name: 'Moth',
+    icon: Moth,
     price: 130,
     location: location.LIGHT,
     availability: {
@@ -314,6 +327,7 @@ export const bugs = [
   },
   {
     name: 'Atlas Moth',
+    icon: AtlasMoth,
     price: 3000,
     location: location.TREE,
     availability: {
@@ -329,6 +343,7 @@ export const bugs = [
   },
   {
     name: 'Madagascan Sunset Moth',
+    icon: MadagascanSunsetMoth,
     price: 2500,
     location: location.FLYING,
     availability: {
@@ -344,6 +359,7 @@ export const bugs = [
   },
   {
     name: 'Long Locust',
+    icon: LongLocust,
     price: 200,
     location: location.GROUND,
     availability: {
@@ -359,6 +375,7 @@ export const bugs = [
   },
   {
     name: 'Migratory Locust',
+    icon: MigratoryLocust,
     price: 600,
     location: location.GROUND,
     availability: {
@@ -374,6 +391,7 @@ export const bugs = [
   },
   {
     name: 'Rice Grasshopper',
+    icon: RiceGrasshopper,
     price: 160,
     location: location.GROUND,
     availability: {
@@ -389,6 +407,7 @@ export const bugs = [
   },
   {
     name: 'Grasshopper',
+    icon: Grasshopper,
     price: 160,
     location: location.GROUND,
     availability: {
@@ -404,6 +423,7 @@ export const bugs = [
   },
   {
     name: 'Cricket',
+    icon: Cricket,
     price: 130,
     location: location.GROUND,
     availability: {
@@ -419,6 +439,7 @@ export const bugs = [
   },
   {
     name: 'Bell Cricket',
+    icon: BellCricket,
     price: 430,
     location: location.GROUND,
     availability: {
@@ -434,6 +455,7 @@ export const bugs = [
   },
   {
     name: 'Mantis',
+    icon: Mantis,
     price: 430,
     location: location.FLOWERS,
     availability: {
@@ -449,6 +471,7 @@ export const bugs = [
   },
   {
     name: 'Orchid Mantis',
+    icon: OrchidMantis,
     price: 2400,
     location: location.W_FLOWERS,
     availability: {
@@ -464,6 +487,7 @@ export const bugs = [
   },
   {
     name: 'Honeybee',
+    icon: Honeybee,
     price: 200,
     location: location.ABOVE_FLOWERS,
     availability: {
@@ -479,6 +503,7 @@ export const bugs = [
   },
   {
     name: 'Wasp',
+    icon: Wasp,
     price: 2500,
     location: location.SHAKING_TREES,
     availability: {
@@ -494,6 +519,7 @@ export const bugs = [
   },
   {
     name: 'Brown Cicada',
+    icon: BrownCicada,
     price: 250,
     location: location.TREE,
     availability: {
@@ -509,6 +535,7 @@ export const bugs = [
   },
   {
     name: 'Robust Cicada',
+    icon: RobustCicada,
     price: 300,
     location: location.TREE,
     availability: {
@@ -524,6 +551,7 @@ export const bugs = [
   },
   {
     name: 'Giant Cicada',
+    icon: GiantCicada,
     price: 500,
     location: location.TREE,
     availability: {
@@ -539,6 +567,7 @@ export const bugs = [
   },  
   {
     name: 'Walker Cicada',
+    icon: WalkerCicada,
     price: 400,
     location: location.TREE,
     availability: {
@@ -554,6 +583,7 @@ export const bugs = [
   },
   {
     name: 'Evening Cicada',
+    icon: EveningCicada,
     price: 550,
     location: location.TREE,
     availability: {
@@ -575,6 +605,7 @@ export const bugs = [
   },
   {
     name: 'Cicada Shell',
+    icon: CicadaShell,
     price: 10,
     location: location.TREE,
     availability: {
@@ -590,6 +621,7 @@ export const bugs = [
   },
   {
     name: 'Red Dragonfly',
+    icon: RedDragonfly,
     price: 180,
     location: location.FLYING,
     availability: {
@@ -605,6 +637,7 @@ export const bugs = [
   },
   {
     name: 'Darner Dragonfly',
+    icon: DarnerDragonfly,
     price: 230,
     location: location.FLYING,
     availability: {
@@ -620,6 +653,7 @@ export const bugs = [
   },
   {
     name: 'Banded Dragonfly',
+    icon: BandedDragonfly,
     price: 4500,
     location: location.FLYING,
     availability: {
@@ -635,6 +669,7 @@ export const bugs = [
   },
   {
     name: 'Damselfly',
+    icon: Damselfly,
     price: 500,
     location: location.FLYING,
     availability: {
@@ -650,6 +685,7 @@ export const bugs = [
   },
   {
     name: 'Firefly',
+    icon: Firefly,
     price: 300,
     location: location.FLYING,
     availability: {
@@ -664,7 +700,8 @@ export const bugs = [
     }
   },
   {
-    name: 'Mole cricket',
+    name: 'Mole Cricket',
+    icon: MoleCricket,
     price: 500,
     location: location.UNDERGROUND,
     availability: {
@@ -680,6 +717,7 @@ export const bugs = [
   },
   {
     name: 'Pondskater',
+    icon: Pondskater,
     price: 130,
     location: location.PONDS_AND_RIVERS,
     availability: {
@@ -695,6 +733,7 @@ export const bugs = [
   },
   {
     name: 'Diving Beetle',
+    icon: DivingBeetle,
     price: 800,
     location: location.PONDS_AND_RIVERS,
     availability: {
@@ -710,6 +749,7 @@ export const bugs = [
   },
   {
     name: 'Giant Water Bug',
+    icon: GiantWaterBug,
     price: 2000,
     location: location.PONDS_AND_RIVERS,
     availability: {
@@ -725,6 +765,7 @@ export const bugs = [
   },
   {
     name: 'Stinkbug',
+    icon: Stinkbug,
     price: 120,
     location: location.FLOWERS,
     availability: {
@@ -740,6 +781,7 @@ export const bugs = [
   },
   {
     name: 'Man-faced Stink Bug',
+    icon: ManFacedStinkBug,
     price: 1000,
     location: location.FLOWERS,
     availability: {
@@ -755,6 +797,7 @@ export const bugs = [
   },
   {
     name: 'Ladybug',
+    icon: Ladybug,
     price: 200,
     location: location.FLOWERS,
     availability: {
@@ -770,6 +813,7 @@ export const bugs = [
   },
   {
     name: 'Tiger Beetle',
+    icon: TigerBeetle,
     price: 1500,
     location: location.FLYING,
     availability: {
@@ -785,6 +829,7 @@ export const bugs = [
   },
   {
     name: 'Jewel Beetle',
+    icon: JewelBeetle,
     price: 2400,
     location: location.TREE_STUMPS,
     availability: {
@@ -800,6 +845,7 @@ export const bugs = [
   },
   {
     name: 'Citrus Long-horned Beetle',
+    icon: CitrusLongHornedBeetle,
     price: 350,
     location: location.TREE_STUMPS,
     availability: {
@@ -815,6 +861,7 @@ export const bugs = [
   },
   {
     name: 'Rosalia Batesi Beetle',
+    icon: RosaliaBatesiBeetle,
     price: 3000,
     location: location.TREE_STUMPS,
     availability: {
@@ -830,6 +877,7 @@ export const bugs = [
   },
   {
     name: 'Blue Weevil Beetle',
+    icon: BlueWeevilBeetle,
     price: 800,
     location: location.TREE,
     availability: {
@@ -845,6 +893,7 @@ export const bugs = [
   },
   {
     name: 'Violin Beetle',
+    icon: ViolinBeetle,
     price: 450,
     location: location.TREE,
     availability: {
@@ -866,6 +915,7 @@ export const bugs = [
   },
   {
     name: 'Dung Beetle',
+    icon: DungBeetle,
     price: 3000,
     location: location.GROUND,
     availability: {
@@ -881,6 +931,7 @@ export const bugs = [
   },
   {
     name: 'Earth-boring Dung Beetle',
+    icon: EarthBoringDungBeetle,
     price: 300,
     location: location.GROUND,
     availability: {
@@ -896,6 +947,7 @@ export const bugs = [
   },
   {
     name: 'Scarab Beetle',
+    icon: ScarabBeetle,
     price: 10000,
     location: location.TREE,
     availability: {
@@ -911,6 +963,7 @@ export const bugs = [
   },
   {
     name: 'Drone Beetle',
+    icon: DroneBeetle,
     price: 200,
     location: location.TREE,
     availability: {
@@ -926,6 +979,7 @@ export const bugs = [
   },
   {
     name: 'Goliath Beetle',
+    icon: GoliathBeetle,
     price: 8000,
     location: location.TREE_COCONUT,
     availability: {
@@ -941,21 +995,7 @@ export const bugs = [
   },
   {
     name: 'Saw Stag',
-    price: 2000,
-    location: location.TREE,
-    availability: {
-      times: [{
-        start: 0,
-        end: 23
-      }],
-      months: [{
-        start: 6,
-        end: 7
-      }]
-    }
-  },
-  {
-    name: 'Saw Stag',
+    icon: SawStag,
     price: 2000,
     location: location.TREE,
     availability: {
@@ -971,6 +1011,7 @@ export const bugs = [
   },
   {
     name: 'Miyama Stag',
+    icon: MiyamaStag,
     price: 1000,
     location: location.TREE,
     availability: {
@@ -986,6 +1027,7 @@ export const bugs = [
   },
   {
     name: 'Giant Stag',
+    icon: GiantStag,
     price: 10000,
     location: location.TREE,
     availability: {
@@ -1001,6 +1043,7 @@ export const bugs = [
   },
   {
     name: 'Rainbow Stag',
+    icon: RainbowStag,
     price: 6000,
     location: location.TREE,
     availability: {
@@ -1016,6 +1059,7 @@ export const bugs = [
   },
   {
     name: 'Cyclommatus Stag',
+    icon: CyclommatusStag,
     price: 8000,
     location: location.TREE,
     availability: {
@@ -1031,6 +1075,7 @@ export const bugs = [
   },
   {
     name: 'Golden Stag',
+    icon: GoldenStag,
     price: 12000,
     location: location.TREE,
     availability: {
@@ -1046,6 +1091,7 @@ export const bugs = [
   },
   {
     name: 'Giraffe Stag',
+    icon: GiraffeStag,
     price: 12000,
     location: location.TREE,
     availability: {
@@ -1061,6 +1107,7 @@ export const bugs = [
   },
   {
     name: 'Horned Dynastid',
+    icon: HornedDynastid,
     price: 1350,
     location: location.TREE,
     availability: {
@@ -1076,6 +1123,7 @@ export const bugs = [
   },
   {
     name: 'Horned Atlas',
+    icon: HornedAtlas,
     price: 8000,
     location: location.TREE,
     availability: {
@@ -1091,6 +1139,7 @@ export const bugs = [
   },
   {
     name: 'Horned Elephant',
+    icon: HornedElephant,
     price: 8000,
     location: location.TREE,
     availability: {
@@ -1106,6 +1155,7 @@ export const bugs = [
   },
   {
     name: 'Horned Hercules',
+    icon: HornedHercules,
     price: 12000,
     location: location.TREE,
     availability: {
@@ -1121,6 +1171,7 @@ export const bugs = [
   },
   {
     name: 'Walking Stick',
+    icon: WalkingStick,
     price: 600,
     location: location.TREE,
     availability: {
@@ -1142,6 +1193,7 @@ export const bugs = [
   },
   {
     name: 'Walking Leaf',
+    icon: WalkingLeaf,
     price: 600,
     location: location.GROUND_TREE,
     availability: {
@@ -1157,6 +1209,7 @@ export const bugs = [
   },
   {
     name: 'Bagworm',
+    icon: Bagworm,
     price: 600,
     location: location.SHAKING_TREES,
     availability: {
@@ -1172,6 +1225,7 @@ export const bugs = [
   },
   {
     name: 'Ant',
+    icon: Ant,
     price: 80,
     location: location.ROTTEN_TURNIPS_AND_FRUIT,
     availability: {
@@ -1187,6 +1241,7 @@ export const bugs = [
   },
   {
     name: 'Hermit Crab',
+    icon: HermitCrab,
     price: 1000,
     location: location.BEACH,
     availability: {
@@ -1202,6 +1257,7 @@ export const bugs = [
   },
   {
     name: 'Wharf Roach',
+    icon: WharfRoach,
     price: 200,
     location: location.BEACH_ROCK,
     availability: {
@@ -1217,6 +1273,7 @@ export const bugs = [
   },
   {
     name: 'Fly',
+    icon: Fly,
     price: 60,
     location: location.ROTTEN_FOOD_AND_GARBAGE,
     availability: {
@@ -1232,6 +1289,7 @@ export const bugs = [
   },
   {
     name: 'Mosquito',
+    icon: Mosquito,
     price: 130,
     location: location.FLYING,
     availability: {
@@ -1247,6 +1305,7 @@ export const bugs = [
   },
   {
     name: 'Flea',
+    icon: Flea,
     price: 70,
     location: location.FLEA_VILLAGER,
     availability: {
@@ -1262,6 +1321,7 @@ export const bugs = [
   },
   {
     name: 'Snail',
+    icon: Snail,
     price: 250,
     location: location.ROCK_RAIN,
     availability: {
@@ -1277,6 +1337,7 @@ export const bugs = [
   },
   {
     name: 'Pill Bug',
+    icon: PillBug,
     price: 250,
     location: location.HITTING_ROCK,
     availability: {
@@ -1292,6 +1353,7 @@ export const bugs = [
   },
   {
     name: 'Centipede',
+    icon: Centipede,
     price: 300,
     location: location.HITTING_ROCK,
     availability: {
@@ -1307,6 +1369,7 @@ export const bugs = [
   },
   {
     name: 'Spider',
+    icon: Spider,
     price: 480,
     location: location.SHAKING_TREES,
     availability: {
@@ -1317,6 +1380,38 @@ export const bugs = [
       months: [{
         start: 0,
         end: 11
+      }]
+    }
+  },
+  {
+    name: 'Tarantula',
+    icon: Tarantula,
+    price: 8000,
+    location: location.GROUND,
+    availability: {
+      times: [{
+        start: 19,
+        end: 4
+      }],
+      months: [{
+        start: 10,
+        end: 3
+      }]
+    }
+  },
+  {
+    name: 'Scorpion',
+    icon: Scorpion,
+    price: 8000,
+    location: location.GROUND,
+    availability: {
+      times: [{
+        start: 19,
+        end: 4
+      }],
+      months: [{
+        start: 4,
+        end: 9
       }]
     }
   },

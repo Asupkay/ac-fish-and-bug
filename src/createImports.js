@@ -1,7 +1,5 @@
-var fs = require('fs');
-var files = fs.readdirSync('./bugs/');
-files.forEach((file) => {
-  const fileName = file.replace(/\.[^/.]+$/, "");
-  console.log(`import ${fileName} from '../public/bugs/${file}';`);
+const bugs = require('./data/bugs');
+bugs.forEach((bug) => {
+  bug.icon = bug.name.trim()
 });
-console.log(files);
+console.log(bugs);
