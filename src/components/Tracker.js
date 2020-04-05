@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Cookies from 'universal-cookie';
 import './Tracker.css';
 
 import Item from './Item';
@@ -8,12 +9,19 @@ import ItemInfo from './ItemInfo';
 const Tracker = ({title, items}) => {
   const [showModal, setModal] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
+  const [cookies, setCookies] = useState(new Cookies());
+
+  const handleCheck = (e) => {
+    cookies.set(e.target.value, e.target.checked);
+    setCookies(new Cookies());
+  }
 
   const renderItems = (items) => {
     return items.map((item, index) => 
       <Item 
         key={index} 
         item={item}
+        found={cookies.get(item.name)}
         onClick={() => {setModal(true); setActiveItem(item)}}
       />
     );
@@ -29,7 +37,13 @@ const Tracker = ({title, items}) => {
         show={showModal} 
         handleClose={() => setModal(false)}
       >
-        {activeItem && <ItemInfo item={activeItem}/>}
+        {activeItem && 
+          <ItemInfo 
+            handleCheck={handleCheck} 
+            checked={cookies.get(activeItem.name)}
+            item={activeItem}
+          />
+        }
       </Modal>
     </div>
   );

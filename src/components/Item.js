@@ -1,9 +1,10 @@
 import React from 'react';
 import './Item.css';
 
-const Item = ({item, onClick}) => {
+const Item = ({item, onClick, found}) => {
+  const foundStyle = (found === 'true') ? 'found-opacity' : '';
   return (
-    <div className="item-container">
+    <div className={`item-container ${foundStyle}`}>
       <img 
         onClick={onClick}
         className="item-icon" 

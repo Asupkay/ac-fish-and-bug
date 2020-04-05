@@ -83,13 +83,13 @@ import YellowButterfly from '../images/bugs/YellowButterfly.png';
 const location = {
   FLYING: 'Flying',
   ABOVE_FLOWERS: 'Above flowers',
-  ABOVE_PBB_FLOWERS: 'Above purple, black, and blue flowers',
+  ABOVE_HYBRID_FLOWERS: 'Flying by hybrid flowers',
   FLOWERS: 'On flowers',
-  W_FLOWERS: 'On white flowers',
+  W_FLOWERS: 'On flowers (white)',
   LIGHT: 'Flying around light',
   SHAKING_TREES: 'Shaking trees',
   TREE: 'On trees',
-  TREE_COCONUT: 'On coconut trees',
+  TREE_COCONUT: 'On trees (coconut)',
   GROUND: 'On the ground',
   GROUND_TREE: 'On ground beneath trees',
   UNDERGROUND: 'Underground',
@@ -97,8 +97,8 @@ const location = {
   TREE_STUMPS: 'On tree stumps',
   BEACH: 'On beach',
   BEACH_ROCKS: 'On beach rocks',
-  ROTTEN_TURNIPS_AND_FRUIT: 'On rotten turnips and fruit',
-  ROTTEN_FOOD_AND_GARBAGE: 'On rotten food and garbage',
+  ROTTEN_FOOD: 'On rotten food',
+  TRASH: 'On trash items',
   FLEA_VILLAGER: 'On flea-infested villagers',
   ROCK_RAIN: 'On rocks in the rain',
   HITTING_ROCK: 'Hitting rocks',
@@ -1061,7 +1061,7 @@ export const bugs = [
     name: 'Cyclommatus Stag',
     icon: CyclommatusStag,
     price: 8000,
-    location: location.TREE,
+    location: location.TREE_COCONUT,
     availability: {
       times: [{
         start: 17,
@@ -1077,7 +1077,7 @@ export const bugs = [
     name: 'Golden Stag',
     icon: GoldenStag,
     price: 12000,
-    location: location.TREE,
+    location: location.TREE_COCONUT,
     availability: {
       times: [{
         start: 17,
@@ -1093,7 +1093,7 @@ export const bugs = [
     name: 'Giraffe Stag',
     icon: GiraffeStag,
     price: 12000,
-    location: location.TREE,
+    location: location.TREE_COCONUT,
     availability: {
       times: [{
         start: 17,
@@ -1125,7 +1125,7 @@ export const bugs = [
     name: 'Horned Atlas',
     icon: HornedAtlas,
     price: 8000,
-    location: location.TREE,
+    location: location.TREE_COCONUT,
     availability: {
       times: [{
         start: 17,
@@ -1141,7 +1141,7 @@ export const bugs = [
     name: 'Horned Elephant',
     icon: HornedElephant,
     price: 8000,
-    location: location.TREE,
+    location: location.TREE_COCONUT,
     availability: {
       times: [{
         start: 17,
@@ -1157,7 +1157,7 @@ export const bugs = [
     name: 'Horned Hercules',
     icon: HornedHercules,
     price: 12000,
-    location: location.TREE,
+    location: location.TREE_COCONUT,
     availability: {
       times: [{
         start: 17,
@@ -1227,7 +1227,7 @@ export const bugs = [
     name: 'Ant',
     icon: Ant,
     price: 80,
-    location: location.ROTTEN_TURNIPS_AND_FRUIT,
+    location: location.ROTTEN_FOOD,
     availability: {
       times: [{
         start: 0,
@@ -1275,7 +1275,7 @@ export const bugs = [
     name: 'Fly',
     icon: Fly,
     price: 60,
-    location: location.ROTTEN_FOOD_AND_GARBAGE,
+    location: location.TRASH,
     availability: {
       times: [{
         start: 0,

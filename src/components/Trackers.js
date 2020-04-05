@@ -54,7 +54,6 @@ const Trackers = ({date}) => {
   const [sortBy, setSortBy] = useState(sortOptions.ALPHABETICAL)
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     setSortBy(e.target.value);
   }
 

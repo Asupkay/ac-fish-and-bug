@@ -4,6 +4,10 @@
     height: auto;
 }
 
+.found-opacity {
+    opacity: .5;
+}
+
 @media(max-width: 768px) {
     .item-icon {
         width: 50px;
