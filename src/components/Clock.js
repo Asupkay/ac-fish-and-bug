@@ -8,7 +8,7 @@ const formatTime = (date) => {
   let hours = milTime;
   if (milTime > 12) {
     hours -= 12;
-  } else if (milTime == 0) {
+  } else if (milTime === 0) {
     hours = 12;
   }
 
