@@ -15,6 +15,32 @@
     }
 }
 
+.content-container {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.new-dot {
+    background-color: green;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.leaving-dot {
+    background-color: red;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
 .item-container {
     flex-basis: 5%;
     text-align: center;
