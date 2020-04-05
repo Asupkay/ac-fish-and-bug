@@ -13,7 +13,7 @@ const ItemTime = ({times}) => {
     return `${formatTime(timeStart)}-${formatTime(timeEnd)}`;
   });
   return (
-    <p>Time: {timeTextList.join(' & ')}</p>
+    <div><span className="bold">Times:</span> {timeTextList.join(' & ')}</div>
   )
 };
 

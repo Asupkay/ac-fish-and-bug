@@ -1,3 +1,21 @@
 .item-info {
     text-align: center;
 }
+
+.item-info-header {
+    margin: 5px 0px;
+}
+
+.donate-checkbox-container {
+    padding-bottom: 5px;
+}
+
+.info-container {
+    text-align: left;
+    padding: 5px;
+    border: 1px black solid;
+}
+
+.bold {
+    font-weight: bold;
+}

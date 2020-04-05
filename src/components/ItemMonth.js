@@ -6,7 +6,7 @@ const ItemMonth = ({months}) => {
     return `${monthNames[month.start]}-${monthNames[month.end]}`;
   });
   return (
-    <p>Months: {timeTextList.join(' & ')}</p>
+    <div><span className="bold">Months:</span> {timeTextList.join(' & ')}</div>
   )
 };
 
