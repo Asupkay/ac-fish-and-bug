@@ -157,7 +157,7 @@ export const bugs = [
     name: 'Peacock Butterfly',
     icon: PeacockButterfly,
     price: 2500,
-    location: location.PBB_FLOWERS,
+    location: location.ABOVE_HYBRID_FLOWERS,
     availability: {
       times: [{
         start: 4,
