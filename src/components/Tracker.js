@@ -22,7 +22,9 @@ const Tracker = ({title, items}) => {
   return (
     <div>
       <h2 className="title">{title}</h2>
-      {renderItems(items)} 
+      <div className="items-container">
+        {renderItems(items)} 
+      </div>
       <Modal 
         show={showModal} 
         handleClose={() => setModal(false)}

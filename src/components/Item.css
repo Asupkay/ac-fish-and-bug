@@ -10,3 +10,29 @@
         height: 50px;
     }
 }
+
+.item-container {
+    flex-basis: 5%;
+    text-align: center;
+}
+
+@media(max-width: 1333px) {
+  .item-container {
+    flex-basis: 5%;
+  }
+}
+@media(max-width: 1073px) {
+   .item-container {
+    flex-basis: 12.5%;
+  }
+}
+@media(max-width: 815px) {
+  .item-container {
+    flex-basis: 10%;
+  }
+}
+@media(max-width: 555px) {
+  .item-container {
+    flex-basis: 20%;
+  }
+}
