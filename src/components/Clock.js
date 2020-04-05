@@ -5,7 +5,15 @@ const formatTime = (date) => {
   const minNum = date.getMinutes();
   const min = (minNum < 10) ? `0${minNum}`: `${minNum}`;
   const milTime = date.getHours();
-  return (milTime > 12) ? `${milTime - 12}:${min}pm` : `${milTime}:${min}am`;
+  let hours = milTime;
+  if (milTime > 12) {
+    hours -= 12;
+  } else if (milTime == 0) {
+    hours = 12;
+  }
+
+  const hourString = (hours < 10) ? `0${hours}` : `${hours}`;
+  return (milTime >= 12) ? `${hourString}:${min}pm` : `${hourString}:${min}am`;
 }
 
 const formatDate = (date) => {
@@ -19,8 +27,6 @@ const formatDate = (date) => {
 }
 
 const Clock = ({date}) => {
-
- 
   return (
     <div className="clock-container">
       <div className="time-container">

@@ -3,6 +3,7 @@ import './Tracker.css';
 
 import Item from './Item';
 import Modal from './Modal';
+import ItemInfo from './ItemInfo';
 
 const Tracker = ({title, items}) => {
   const [showModal, setModal] = useState(false);
@@ -26,7 +27,7 @@ const Tracker = ({title, items}) => {
         show={showModal} 
         handleClose={() => setModal(false)}
       >
-        {activeItem && <p>{activeItem.name}</p>}
+        {activeItem && <ItemInfo item={activeItem}/>}
       </Modal>
     </div>
   );

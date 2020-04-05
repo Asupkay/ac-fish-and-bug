@@ -85,7 +85,8 @@ const location = {
   RIVER_CLIFFTOP: 'River (Clifftop)',
   RIVER_MOUTH: 'River (Mouth)',
   SEA: 'Sea',
-  PIER: 'Pier',
+  SEA_RAIN: 'Sea (Rain)',
+  PIER: 'Pier'
 }
 
 

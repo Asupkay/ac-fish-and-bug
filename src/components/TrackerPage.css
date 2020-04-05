@@ -1,0 +1,27 @@
+.tracker-page-container {
+    min-height: 100%;
+}
+
+.morning-background {
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(180deg, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.noon-background {
+    background: #EDE574;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(180deg, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.evening-background {
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(180deg, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.night-background {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(180deg, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

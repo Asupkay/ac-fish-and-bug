@@ -1,4 +1,5 @@
 import React from 'react';
+import './Trackers.css';
 import Tracker from './Tracker';
 import {fish} from '../data/fish'; 
 import {bugs} from '../data/bugs';
@@ -30,7 +31,7 @@ const Trackers = ({date}) => {
   const cFish = fish.filter(fish => filterData(fish, cMonth, cHour));
   const cBugs = bugs.filter(bug => filterData(bug, cMonth, cHour));
   return (
-    <div>
+    <div className="trackers-container">
       <Tracker title="Fish" items={cFish}/>
       <Tracker title="Bugs" items={cBugs}/>
     </div> 
