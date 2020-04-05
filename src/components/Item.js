@@ -17,7 +17,8 @@ const isItemLeaving = (item) => {
   item.availability.months.forEach((month) => {
     isLeaving = isLeaving || (month.end === new Date().getMonth() && month.start + 11 !== month.end)
   });
-  return isLeaving;}
+  return isLeaving;
+}
 
 const Item = ({item, onClick, found}) => {
   const foundStyle = (found === 'true') ? 'found-opacity' : '';
