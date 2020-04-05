@@ -1,7 +1,6 @@
 import React from 'react';
 import Clock from './Clock';
 import Trackers from './Trackers';
-import Dropdown from './Dropdown';
 import './TrackerPage.css';
 
 const getBackgroundColor = (time) => {
