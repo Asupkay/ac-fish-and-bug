@@ -3,6 +3,8 @@ import Cookies from 'universal-cookie';
 import './Trackers.css';
 import Tracker from './Tracker';
 import Dropdown from './Dropdown';
+import LeavingDot from './LeavingDot';
+import NewDot from './NewDot';
 import {fish} from '../data/fish'; 
 import {bugs} from '../data/bugs';
 
@@ -102,6 +104,20 @@ const Trackers = ({date}) => {
         options={hemisphereOptions}
         selected={hemisphere}
       />
+      <div className="key-container">
+        <span className="key">
+          <div className="padding-right">
+            <NewDot/>
+          </div> 
+          New this month
+        </span>
+        <span className="key">
+          <div className="padding-right">
+            <LeavingDot/>
+          </div>
+          Leaving this month
+        </span>      
+      </div>
       <Tracker title="Fish" items={cFish}/>
       <Tracker title="Bugs" items={cBugs}/>
     </div> 

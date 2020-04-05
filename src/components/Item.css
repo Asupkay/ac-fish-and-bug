@@ -21,21 +21,13 @@
     margin: auto;
 }
 
-.new-dot {
-    background-color: green;
-    height: 5px;
-    width: 5px;
-    border-radius: 100%;
+.new-dot-container {
     position: absolute;
     top: 5px;
     left: 5px;
 }
 
-.leaving-dot {
-    background-color: red;
-    height: 5px;
-    width: 5px;
-    border-radius: 100%;
+.leaving-dot-container {
     position: absolute;
     top: 5px;
     right: 5px;

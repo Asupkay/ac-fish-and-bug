@@ -1,10 +1,13 @@
 import React from 'react';
 import './Item.css';
 
+import NewDot from './NewDot';
+import LeavingDot from './LeavingDot';
+
 const isItemNew = (item) => {
   let isNew = false;
   item.availability.months.forEach((month) => {
-    isNew = isNew || (month.start === new Date().getMonth() && month.end - 11 != month.start)
+    isNew = isNew || (month.start === new Date().getMonth() && month.end - 11 !== month.start)
   });
   return isNew;
 }
@@ -12,7 +15,7 @@ const isItemNew = (item) => {
 const isItemLeaving = (item) => {
   let isLeaving = false;
   item.availability.months.forEach((month) => {
-    isLeaving = isLeaving || (month.end === new Date().getMonth() && month.start + 11 != month.end)
+    isLeaving = isLeaving || (month.end === new Date().getMonth() && month.start + 11 !== month.end)
   });
   return isLeaving;}
 
@@ -29,8 +32,8 @@ const Item = ({item, onClick, found}) => {
           src={item.icon} 
           alt={item.name}
         />
-        {isNew && <div className="new-dot"/>}
-        {isLeaving && <div className="leaving-dot"/>}
+        {isNew && <div className="new-dot-container"><NewDot/></div>}
+        {isLeaving && <div className="leaving-dot-container"><LeavingDot/></div>}
       </div>
     </div>
   );
