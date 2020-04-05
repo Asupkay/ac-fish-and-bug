@@ -1,0 +1,10 @@
+.dropdown-container {
+    text-align: center;
+}
+
+.sort-select {
+    background-color: white;
+    margin: 0px 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
