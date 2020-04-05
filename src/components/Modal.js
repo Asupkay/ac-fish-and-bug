@@ -30,6 +30,7 @@ const Modal = ({ handleClose, show, children }) => {
   return (
     <div className={showHideClassName}>
       <div ref={show ? wrapperRef : null} className="modal-main">
+        <div className="close-button" onClick={handleClose}>X</div>
         {children}
       </div>
     </div>

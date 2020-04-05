@@ -25,3 +25,10 @@
 .display-none {
     display: none;
 }
+
+.close-button {
+    margin-right: auto;
+    width: fit-content;
+    cursor: grab;
+    opacity: .7;
+}
