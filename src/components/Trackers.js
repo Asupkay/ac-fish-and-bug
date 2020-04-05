@@ -118,8 +118,8 @@ const Trackers = ({date}) => {
           Leaving this month
         </span>      
       </div>
-      <Tracker title="Fish" items={cFish}/>
-      <Tracker title="Bugs" items={cBugs}/>
+      <Tracker title="Active Fish" items={cFish}/>
+      <Tracker title="Active Bugs" items={cBugs}/>
     </div> 
   );
 };
