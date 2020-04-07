@@ -14,8 +14,6 @@ const getBackgroundColor = (time) => {
   return 'night-background';
 };
 
-
-
 class TrackerPage extends React.Component {
   constructor(props) {
     super(props);
@@ -30,8 +28,6 @@ class TrackerPage extends React.Component {
       1000
     );
   }
-
-
 
   render() {
     const {date} = this.state;

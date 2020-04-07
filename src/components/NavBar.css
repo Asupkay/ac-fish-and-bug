@@ -1,0 +1,40 @@
+.navBar {
+    display: flex;
+    border-bottom: 1px black solid;
+}
+
+
+.links {
+    display: flex;
+    flex: 1;
+    text-align: center;
+}
+
+.link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border-left: 1px black solid;
+}
+
+.link:hover {
+    color: gray;
+}
+
+.logo {
+    flex: 2;
+    height: 50px;
+}
+
+@media (max-width: 640px) {
+    .logo {
+        flex: 1;
+    }
+}
+
+.icon {
+    height: 100%;
+}

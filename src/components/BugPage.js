@@ -1,10 +1,17 @@
 import React from 'react';
 import Tracker from './Tracker';
+import DotKey from './DotKey';
+import './BugPage.css';
 import {bugs} from '../data/bugs';
 
 const BugsPage = (props) => {
   return (
-    <Tracker title={"Bugs"} items={bugs}/>
+    <>
+      <div className="dot-key-container">
+        <DotKey/>
+      </div>
+      <Tracker title={"Bugs"} items={bugs}/>
+    </>
   );
 };
 
