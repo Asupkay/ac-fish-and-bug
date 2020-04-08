@@ -6,6 +6,7 @@ import Dropdown from './Dropdown';
 import DotKey from './DotKey';
 import {fish} from '../data/fish'; 
 import {bugs} from '../data/bugs';
+import {hemisphereOptions} from './consts';
 
 const withinBound = (bound, currentNum) => {
   const {start, end} = bound;
@@ -34,10 +35,7 @@ const sortOptions = {
   NOT_DONATED: 'Not Donated',
 }
 
-const hemisphereOptions = {
-  NORTHERN_HEMISPHERE: 'North',
-  SOUTHERN_HEMISPHERE: 'South'
-}
+
 
 const sortItems = (option, items) => {
   switch(option) {
