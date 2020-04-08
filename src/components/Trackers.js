@@ -114,7 +114,7 @@ const Trackers = ({date}) => {
           onChange={handleCheck} 
           id="showOnlyActive"
         />
-        <label htmlFor="showOnlyActive">Show Only Active Critters</label>
+        <label htmlFor="showOnlyActive">Show only active critters</label>
       </div>
       <DotKey/>
       <Tracker title="Active Fish" items={cFish} offset={offset}/>
