@@ -3,7 +3,7 @@ import './ItemInfo.css';
 import ItemTime from './ItemTime';
 import ItemMonth from './ItemMonth';
 
-const ItemInfo = ({item, handleCheck, checked}) => {
+const ItemInfo = ({item, handleCheck, checked, offset}) => {
   return (
     <div className="item-info">
       <img alt={item.name} src={item.icon}/>
@@ -23,7 +23,7 @@ const ItemInfo = ({item, handleCheck, checked}) => {
         <div><span className="bold">Price:</span> {item.price} Bells</div>
         {item.size && <div><span className="bold">Shadow size:</span> {item.size}</div>}
         <ItemTime times={item.availability.times}/>
-        <ItemMonth months={item.availability.months}/>
+        <ItemMonth months={item.availability.months} offset={offset}/>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ import Item from './Item';
 import Modal from './Modal';
 import ItemInfo from './ItemInfo';
 
-const Tracker = ({title, items}) => {
+const Tracker = ({title, items, offset}) => {
   const [showModal, setModal] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
   const [cookies, setCookies] = useState(new Cookies());
@@ -42,6 +42,7 @@ const Tracker = ({title, items}) => {
             handleCheck={handleCheck} 
             checked={cookies.get(activeItem.name)}
             item={activeItem}
+            offset={offset}
           />
         }
       </Modal>

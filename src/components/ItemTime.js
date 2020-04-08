@@ -3,6 +3,9 @@ import {formatTime} from './timeUtils';
 
 const ItemTime = ({times}) => {
   const timeTextList = times.map((time) => {
+    if (time.start === (time.end) % 24) {
+      return 'All Day';
+    }
     const timeStart = new Date();
     const timeEnd = new Date();
     

@@ -104,8 +104,8 @@ const Trackers = ({date}) => {
         selected={hemisphere}
       />
       <DotKey/>
-      <Tracker title="Active Fish" items={cFish}/>
-      <Tracker title="Active Bugs" items={cBugs}/>
+      <Tracker title="Active Fish" items={cFish} offset={offset}/>
+      <Tracker title="Active Bugs" items={cBugs} offset={offset}/>
     </div> 
   );
 };

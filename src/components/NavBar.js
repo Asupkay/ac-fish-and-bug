@@ -20,7 +20,7 @@ const links = [
 const renderLinks = (links) => {
   return links.map((link, i) => {
     return (
-      <Link className="link" to={link.link}>
+      <Link key={link.link} className="link" to={link.link}>
         <div className="link-text" key={i}>
           {link.text}
         </div>
