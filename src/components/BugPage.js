@@ -8,7 +8,7 @@ import {hemisphereOptions} from './consts';
 
 const BugsPage = (props) => {
   const cookies = new Cookies();
-  const hemisphere = cookies.get('hemisphere') 
+  const hemisphere = cookies.get('hemisphere') || hemisphereOptions.NORTHERN_HEMISPHERE; 
   const offset = (hemisphere === hemisphereOptions.SOUTHERN_HEMISPHERE) ? 6 : 0;
 
   return (
