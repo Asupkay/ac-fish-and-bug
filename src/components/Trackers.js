@@ -35,8 +35,6 @@ const sortOptions = {
   NOT_DONATED: 'Not Donated',
 }
 
-
-
 const sortItems = (option, items) => {
   switch(option) {
     case(sortOptions.ALPHABETICAL):
@@ -71,6 +69,10 @@ const Trackers = ({date}) => {
   const [sortBy, setSortBy] = useState(sortOptions.ALPHABETICAL)
   const [hemisphere, setHemisphere] = useState(cookies.get('hemisphere') || hemisphereOptions.NORTHERN_HEMISPHERE);
 
+  const showOnlyActiveCookie = cookies.get('showOnlyActive');
+  const showOnlyActiveDefault = (showOnlyActiveCookie) ? showOnlyActiveCookie === 'true' : true;
+  const [showOnlyActiveCritters, setShowOnlyActiveCritters] = useState(showOnlyActiveDefault);
+
   const handleChange = (e) => {
     setSortBy(e.target.value);
   }
@@ -80,11 +82,16 @@ const Trackers = ({date}) => {
     cookies.set('hemisphere', e.target.value);
   }
 
+  const handleCheck = (e) => {
+    setShowOnlyActiveCritters(e.target.checked);
+    cookies.set('showOnlyActive', e.target.checked);
+  }
+
   const cMonth = date.getMonth();
   const offset = (hemisphere === hemisphereOptions.SOUTHERN_HEMISPHERE) ? 6 : 0;
   const cHour = date.getHours();
-  const cFish = fish.filter(fish => filterData(fish, cMonth + offset, cHour));
-  const cBugs = bugs.filter(bug => filterData(bug, cMonth + offset, cHour));
+  const cFish = (showOnlyActiveCritters) ? fish.filter(fish => filterData(fish, cMonth + offset, cHour)) : fish;
+  const cBugs = (showOnlyActiveCritters) ? bugs.filter(bug => filterData(bug, cMonth + offset, cHour)): bugs;
   sortItems(sortBy, cFish);
   sortItems(sortBy, cBugs);
   return (
@@ -101,6 +108,14 @@ const Trackers = ({date}) => {
         options={hemisphereOptions}
         selected={hemisphere}
       />
+      <div className="show-only-active-checkbox">
+        <input type="checkbox" 
+          checked={showOnlyActiveCritters} 
+          onChange={handleCheck} 
+          id="showOnlyActive"
+        />
+        <label htmlFor="showOnlyActive">Show Only Active Critters</label>
+      </div>
       <DotKey/>
       <Tracker title="Active Fish" items={cFish} offset={offset}/>
       <Tracker title="Active Bugs" items={cBugs} offset={offset}/>
