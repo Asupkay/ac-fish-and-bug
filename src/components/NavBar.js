@@ -6,7 +6,7 @@ class NavBar extends React.Component {
     return (
       <div className="navBar">
         <div className="logo">
-          <img className="icon" src={process.env.PUBLIC_URL + 'textLogo.png'}/>
+          <img alt="Animal Crossing Critter Clock" className="icon" src={process.env.PUBLIC_URL + 'textLogo.png'}/>
         </div>
       </div>
     );
