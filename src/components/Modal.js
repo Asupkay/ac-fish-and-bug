@@ -25,7 +25,7 @@ const Modal = ({ handleClose, show, children }) => {
 
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
-  const showHideClassName = show ? 'modal display-block' : 'modal display-none';
+  const showHideClassName = show ? 'modal display-flex' : 'modal display-none';
 
   return (
     <div className={showHideClassName}>
