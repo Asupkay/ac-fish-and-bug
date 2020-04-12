@@ -1,5 +1,6 @@
 .key-container {
     display: flex;
+    padding-top: 5px;
     justify-content: center;  
 }
 
