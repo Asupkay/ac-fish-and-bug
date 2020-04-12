@@ -22,6 +22,7 @@ const Tracker = ({title, items, offset}) => {
         key={index} 
         item={item}
         found={cookies.get(item.name)}
+        offset={offset}
         onClick={() => {setModal(true); setActiveItem(item)}}
       />
     );
